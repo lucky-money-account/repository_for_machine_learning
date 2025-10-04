@@ -16,6 +16,8 @@ Money Forever早已从各种渠道了解到GitHub这个最知名的开源网站~
 
 参考学习资源：[Git 教程 | 菜鸟教程](https://www.runoob.com/git/git-tutorial.html)
 
+[github-git-cheat-sheet](https://www.runoob.com/manual/github-git-cheat-sheet.pdf)
+
 好的，下载完就要开始配置了。
 
 先配置个人的用户名称和电子邮件地址，生成ssh密钥以连接至GitHub
@@ -24,11 +26,19 @@ Money Forever早已从各种渠道了解到GitHub这个最知名的开源网站~
 
 <img src="https://raw.githubusercontent.com/lucky-money-account/picgo_resources_photos/main/setting_for_git2.png" alt="屏幕截图 2025-10-04 205259" style="zoom:50%;" />
 
-好的，现在就利用学习材料对这一份markdown文件进行操作吧:smile_cat:
+**好的，现在就利用学习材料对这一份markdown文件进行操作吧:smile_cat:**
 
 ### initial
 
 (ps:主包主包，为什么初始化过后没有文件呢？--因为被隐藏了:cry:)
 
 <img src="https://raw.githubusercontent.com/lucky-money-account/picgo_resources_photos/main/hidden_git.png" alt="屏幕截图 2025-10-04 210923" style="zoom: 33%;" />
+
+好的，通过小猪手，已经将之前版本的此文档放入缓存区，并commit：
+
+<img src="https://raw.githubusercontent.com/lucky-money-account/picgo_resources_photos/main/git_initial_commit.png" alt="屏幕截图 2025-10-04 213208" style="zoom:50%;" />
+
+
+
+### branches
 
