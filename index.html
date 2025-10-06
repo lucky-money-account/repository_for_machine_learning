@@ -125,20 +125,23 @@
         }
 
         .hero-image img {
-            max-width: 100%;
+            width: 200px; /* 调整头像大小 */
+            height: 200px; /* 调整头像大小 */
             border-radius: 50%;
+            object-fit: cover;
             box-shadow: var(--shadow);
             animation: float 3s ease-in-out infinite;
+            border: 3px solid var(--primary-color); /* 调整边框大小 */
         }
 
         @keyframes float {
             0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+            50% { transform: translateY(-10px); }
             100% { transform: translateY(0px); }
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
             color: var(--primary-color);
         }
@@ -175,13 +178,13 @@
             align-items: center;
         }
 
-        .about-text h2, .projects h2, .skills h2, .contact h2 {
-            font-size: 2.5rem;
+        .about-text h2, .projects h2, .skills h2, .hobbies h2, .contact h2 {
+            font-size: 2.2rem;
             margin-bottom: 30px;
             position: relative;
         }
 
-        .about-text h2:after, .projects h2:after, .skills h2:after, .contact h2:after {
+        .about-text h2:after, .projects h2:after, .skills h2:after, .hobbies h2:after, .contact h2:after {
             content: '';
             position: absolute;
             bottom: -10px;
@@ -191,10 +194,30 @@
             background-color: var(--primary-color);
         }
 
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stats {
+            background-color: var(--card-bg);
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .stats h3 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
         /* 项目部分 */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 30px;
         }
 
@@ -211,7 +234,7 @@
         }
 
         .project-img {
-            height: 200px;
+            height: 180px;
             background-color: var(--primary-color);
             display: flex;
             align-items: center;
@@ -278,7 +301,7 @@
             margin-right: 10px;
         }
 
-         /*兴趣部分*/
+        /* 兴趣部分 */
         .hobbies-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -363,6 +386,24 @@
             background-color: var(--secondary-color);
         }
 
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            transition: var(--transition);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
         /* 页脚 */
         footer {
             background-color: var(--card-bg);
@@ -383,15 +424,16 @@
             }
             
             h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
             
             .nav-links {
                 display: none;
             }
             
-            .mobile-menu {
-                display: block;
+            .hero-image img {
+                width: 150px;
+                height: 150px;
             }
         }
     </style>
@@ -466,7 +508,13 @@
             <div class="container">
                 <div class="projects">
                     <h2>我的工具栏</h2>
-                    
+                    <div class="projects-grid">
+                        <!-- 这里可以添加你的工具项目 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- 技能部分 -->
         <section id="skills">
             <div class="container">
@@ -482,31 +530,18 @@
                     </div>
                 </div>
             </div>
+        </section>
 
+        <!-- GitHub部分 -->
         <section id="github">
             <div class="container">
                 <div class="skills">
-                    <h2>我的github首页</h2>
+                    <h2>我的GitHub首页</h2>
                     <div class="skills-container">
                         <div class="skill-category">
-                            <h3>link</h3>
+                            <h3>链接</h3>
                             <ul class="skill-list">
-                                <li><i class="fas fa-check"></i>https://github.com/lucky-money-account</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-         <section id="bilibili">
-            <div class="container">
-                <div class="skills">
-                    <h2>我的bilibiliID</h2>
-                    <div class="skills-container">
-                        <div class="skill-category">
-                            <h3>link</h3>
-                            <ul class="skill-list">
-                                <li><i class="fas fa-check"></i>381827644</li>
+                                <li><i class="fas fa-external-link-alt"></i> <a href="https://github.com/lucky-money-account" target="_blank">https://github.com/lucky-money-account</a></li>
                             </ul>
                         </div>
                     </div>
@@ -514,7 +549,25 @@
             </div>
         </section>
 
-        section id="hobbies">
+        <!-- B站部分 -->
+        <section id="bilibili">
+            <div class="container">
+                <div class="skills">
+                    <h2>我的B站ID</h2>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>ID</h3>
+                            <ul class="skill-list">
+                                <li><i class="fas fa-user"></i> 381827644</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 兴趣爱好部分 -->
+        <section id="hobbies">
             <div class="container">
                 <div class="hobbies">
                     <h2>我的兴趣爱好</h2>
@@ -540,9 +593,9 @@
                             <h3>徒步旅行</h3>
                             <p>享受大自然，定期进行徒步旅行，探索未知的风景和放松心情。</p>
                         </div>
-                       <div class="hobby-card">
+                        <div class="hobby-card">
                             <div class="hobby-icon">
-                                <i class="fas fa-game"></i>
+                                <i class="fas fa-gamepad"></i> <!-- 修复Minecraft图标 -->
                             </div>
                             <h3>Minecraft</h3>
                             <p>欢迎找我联机</p>
@@ -575,7 +628,7 @@
                                 </div>
                             </div>
                             <div class="social-links">
-                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/lucky-money-account" target="_blank"><i class="fab fa-github"></i></a>
                                 <a href="#"><i class="fab fa-linkedin"></i></a>
                                 <a href="#"><i class="fab fa-weibo"></i></a>
                             </div>
