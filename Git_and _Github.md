@@ -42,3 +42,9 @@ Money Forever早已从各种渠道了解到GitHub这个最知名的开源网站~
 
 ### branches
 
+修改并转移branches操作如下：
+
+<img src="https://raw.githubusercontent.com/lucky-money-account/picgo_resources_photos/main/branches_test.png" alt="屏幕截图 2025-10-04 223746" style="zoom: 50%;" />
+
+
+
