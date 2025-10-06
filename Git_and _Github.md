@@ -56,7 +56,9 @@ Money Forever早已从各种渠道了解到GitHub这个最知名的开源网站~
 
 ## tool
 
-在学习网站上，推荐了sourcetree这款可视化辅助软件，可以让用户便捷的进行git的各项操作，免去敲命令行的麻烦。![屏幕截图 2025-10-06 124503](https://raw.githubusercontent.com/lucky-money-account/picgo_resources_photos/main/tool.png)
+在学习网站上，推荐了sourcetree这款可视化辅助软件，可以让用户便捷的进行git的各项操作，免去敲命令行的麻烦。
+
+![屏幕截图 2025-10-06 184139](https://raw.githubusercontent.com/lucky-money-account/picgo_resources_photos/main/branches_final.png)
 
 
 
@@ -68,3 +70,4 @@ Money Forever早已从各种渠道了解到GitHub这个最知名的开源网站~
 
 **希望后面能够更加熟练一点叭**
 
+（大概吧）
