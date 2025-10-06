@@ -48,3 +48,6 @@ Money Forever早已从各种渠道了解到GitHub这个最知名的开源网站~
 
 
 
+合并分支并输出最终结果
+
+<img src="https://raw.githubusercontent.com/lucky-money-account/picgo_resources_photos/main/merge_branches.png" alt="屏幕截图 2025-10-06 114653" style="zoom:50%;" />
