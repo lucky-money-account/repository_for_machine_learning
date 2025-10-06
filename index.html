@@ -278,6 +278,37 @@
             margin-right: 10px;
         }
 
+         /*兴趣部分*/
+        .hobbies-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .hobby-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .hobby-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .hobby-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
         /* 联系部分 */
         .contact-content {
             display: grid;
@@ -376,6 +407,7 @@
                     <li><a href="#about">关于</a></li>
                     <li><a href="#projects">项目</a></li>
                     <li><a href="#skills">技能</a></li>
+                    <li><a href="#hobbies">兴趣爱好</a></li>
                     <li><a href="#contact">联系</a></li>
                 </ul>
                 <button class="theme-toggle" id="themeToggle">
@@ -433,7 +465,7 @@
         <section id="projects">
             <div class="container">
                 <div class="projects">
-                    <h2>我的项目</h2>
+                    <h2>我的工具栏</h2>
                     
         <!-- 技能部分 -->
         <section id="skills">
@@ -442,10 +474,78 @@
                     <h2>我的技能</h2>
                     <div class="skills-container">
                         <div class="skill-category">
-                            <h3>工具与其他</h3>
+                            <h3>工具</h3>
                             <ul class="skill-list">
                                 <li><i class="fas fa-check"></i> Git & GitHub</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <section id="github">
+            <div class="container">
+                <div class="skills">
+                    <h2>我的github首页</h2>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>link</h3>
+                            <ul class="skill-list">
+                                <li><i class="fas fa-check"></i>https://github.com/lucky-money-account</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         <section id="bilibili">
+            <div class="container">
+                <div class="skills">
+                    <h2>我的bilibiliID</h2>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>link</h3>
+                            <ul class="skill-list">
+                                <li><i class="fas fa-check"></i>381827644</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        section id="hobbies">
+            <div class="container">
+                <div class="hobbies">
+                    <h2>我的兴趣爱好</h2>
+                    <div class="hobbies-container">
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>编程</h3>
+                            <p>热爱探索新的编程语言和技术框架，享受解决复杂问题的过程。</p>
+                        </div>
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3>阅读</h3>
+                            <p>喜欢阅读技术书籍、科幻小说和历史类书籍，不断扩展知识边界。</p>
+                        </div>
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i class="fas fa-hiking"></i>
+                            </div>
+                            <h3>徒步旅行</h3>
+                            <p>享受大自然，定期进行徒步旅行，探索未知的风景和放松心情。</p>
+                        </div>
+                       <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i class="fas fa-game"></i>
+                            </div>
+                            <h3>Minecraft</h3>
+                            <p>欢迎找我联机</p>
                         </div>
                     </div>
                 </div>
