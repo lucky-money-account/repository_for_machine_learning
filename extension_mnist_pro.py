@@ -17,7 +17,7 @@ def preprocess_images(images, blur_ksize=(3,3), blur_sigma=0):
         处理后的图像数组，形状相同，值范围 0-255，uint8类型
     """
     processed = np.empty_like(images)
-    for i in range(images.shape[0]):
+    for i in range(images.shape[0]):    ##images 是一个 NumPy 数组，通过image.shape()获取形状，形状通常是 (N, H, W)，其中 N 是图像的数量，H 和 W 分别是图像的高度和宽度。
         # 高斯模糊
         blurred = cv.GaussianBlur(images[i], blur_ksize, blur_sigma)
         # 直方图均衡化
