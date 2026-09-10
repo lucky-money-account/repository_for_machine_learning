@@ -1,0 +1,15 @@
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# 数据与模型权重（不上传）
+data/
+*.params
+*.pth
+*.pt
+checkpoint/
+
+# 系统文件
+.DS_Store
+Thumbs.db
