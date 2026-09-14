@@ -1,0 +1,14 @@
+# Core (already present in the d2l env)
+torch>=2.0
+torchvision>=0.15
+numpy
+scipy
+pillow
+matplotlib
+tqdm
+
+# Optional cross-check tools. NOT required by gan_eval -- it implements
+# FID/KID/IS/MiFID/PR itself. Note: torchmetrics pulls its Inception weights
+# from a GitHub release which is often blocked in mainland China.
+# torchmetrics[image]
+# clean-fid
