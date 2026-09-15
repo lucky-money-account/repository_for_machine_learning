@@ -2,6 +2,38 @@
 
 基于《动手学深度学习》（Dive into Deep Learning，PyTorch 版）的系统学习记录。包含**章节知识点梳理、学习心得、综合题实战笔记、练习代码（Jupyter Notebook）**以及**自建工具函数**。
 
+## 仓库总览（分支导航）
+
+本仓库用**分支**组织不同的学习方向与项目，各分支独立演进、互不影响：
+
+| 分支 | 主题 | 内容概览 |
+| :--- | :--- | :--- |
+| **`main`**（当前） | 动手学深度学习 | `notes/` + `practice/` + `utils/`，覆盖 ch02–ch06 与 ch17 |
+| [`kNN`](https://github.com/lucky-money-account/repository_for_machine_learning/tree/kNN) | kNN 手写数字 OCR | OpenCV `digits.png`（92.56%）与 MNIST（97.71%），含多种预处理对照实验 |
+| [`Neural-Network`](https://github.com/lucky-money-account/repository_for_machine_learning/tree/Neural-Network) | 神经网络基础知识梳理 | `神经骨架.md`：激活函数 / 优化器 / 损失函数 / 正则化 / 评价指标 |
+| [`PBLF-Image-Processing`](https://github.com/lucky-money-account/repository_for_machine_learning/tree/PBLF-Image-Processing) | 人工智能在图像处理 | Git 入门、视频逐帧处理、YOLOv8n 人物识别、图像分类延伸实验 |
+| [`GAN-research`](https://github.com/lucky-money-account/repository_for_machine_learning/tree/GAN-research) | GAN 系列研究母分支 | 系列索引 + 路线图；当前含 DCGAN 动漫头像生成 |
+| [`GAN-dog-fid`](https://github.com/lucky-money-account/repository_for_machine_learning/tree/GAN-dog-fid) | DCGAN 生成狗图 | 自实现的 FID / MiFID 评估系统，FID 从 433 降到 91 |
+
+> **关于「没有共同历史」**：以上分支各自独立起步（root commit 不同），这是有意为之 —— 每个学习方向可以自由演进、互不干扰，也不会互相拖累。
+
+### GAN 系列的分支约定
+
+GAN 相关内容遵循「**一项目一分支**」：
+
+- `GAN-research` 是**母分支**，只放系列索引与路线图，不放具体实验过程
+- 每个 GAN 项目从它切出独立分支（如 `GAN-dog-fid`），完成后按需合回
+
+新建一个 GAN 项目：
+
+```bash
+git switch GAN-research
+git pull
+git switch -c GAN-<project-name>
+```
+
+> 注：`practice/ch17-生成对抗网络/` 属于《动手学深度学习》的课程练习，保留在本分支；独立 GAN 项目见 `GAN-research` 系列。
+
 ## 目录结构
 
 ```
