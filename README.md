@@ -9,19 +9,25 @@
 
 ```
 GAN/
-└── DCGAN-anime-faces/      # DCGAN 动漫头像生成
-    ├── MAIN.ipynb          # 训练脚本
-    ├── EVAL.ipynb          # 推理脚本
-    ├── README.md           # 项目说明
-    ├── model/              # 训练好的模型权重
-    └── sample/             # 生成效果样例
+├── DCGAN-anime-faces/      # DCGAN 动漫头像生成（母分支基线）
+│   ├── MAIN.ipynb          # 训练脚本
+│   ├── EVAL.ipynb          # 推理脚本
+│   ├── README.md           # 项目说明
+│   ├── model/              # 训练好的模型权重
+│   └── sample/             # 生成效果样例
+└── dog-fid/                # DCGAN 生成狗图 + FID 评估（见分支 GAN-dog-fid）
+    ├── README.md
+    ├── PROGRESS.md         # 迭代记录（FID 433 → 91）
+    ├── gan_eval/           # 自实现的评估库
+    └── scripts/            # 命令行脚本
 ```
 
 ## 项目列表
 
-| 项目 | 子分支 | 说明 | 状态 |
+| 项目 | 所在分支 | 说明 | 状态 |
 |---|---|---|---|
-| [DCGAN 动漫头像生成](GAN/DCGAN-anime-faces/) | `DCGAN-anime-faces` | 基于 Kaggle 动漫人脸数据集（63,565 张）训练 DCGAN，从 100 维噪声生成 64×64 动漫头像 | 已完成 |
+| [DCGAN 动漫头像生成](GAN/DCGAN-anime-faces/) | `GAN-research`（本分支，作为基线） | 基于 Kaggle 动漫人脸数据集（63,565 张）训练 DCGAN，从 100 维噪声生成 64×64 动漫头像 | 已完成 |
+| DCGAN 生成狗图 + FID 评估 | [`GAN-dog-fid`](https://github.com/lucky-money-account/repository_for_machine_learning/tree/GAN-dog-fid) | 基于 Stanford Dogs（20,580 张）训练 DCGAN，自实现 FID / MiFID / KID / IS / Precision-Recall 评估系统，FID 从 433 降到 91 | 已完成 |
 
 ## 分支约定
 
@@ -51,7 +57,7 @@ git merge --no-ff GAN-<project-name>
 
 ## 路线图
 
-- [x] **DCGAN** —— 无条件生成，动漫头像
+- [x] **DCGAN** —— 无条件生成：动漫头像（基线）、狗图 + FID 评估（`GAN-dog-fid`）
 - [ ] **WGAN / WGAN-GP** —— 用 Wasserstein 距离与梯度惩罚改善训练稳定性
 - [ ] **CGAN** —— 条件生成，按类别或标签控制输出
 - [ ] **潜空间探索** —— 插值、属性方向、DCGAN 特征可视化
