@@ -1,0 +1,5 @@
+# 大文件与临时文件（不入库）
+Images/
+*.pth
+.ipynb_checkpoints/
+*.bak.ipynb
